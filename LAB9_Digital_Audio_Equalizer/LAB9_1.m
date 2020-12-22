@@ -1,0 +1,125 @@
+[y1, fs1] = audioread('Audio_Classic01_11sec.wav');
+t1 = linspace(0, 11, length(y1));
+figure(1);
+subplot(321);
+plot(t1, y1);
+grid on;
+xlabel('Time[sec]');
+ylabel('Input audio, x(t)');
+legend('Audio Classic01 11sec');
+
+[f1, X1] = myfun_SA(t1, y1);
+figure(2);
+subplot(321);
+plot(f1, abs(X1));
+grid on;
+xlim([0, 5000]);
+xlabel('Frequency[Hz]');
+ylabel('|X(f)|');
+legend('Audio Classic01 11sec');
+% sound(y1, fs1);
+
+[y2, fs2] = audioread('Audio_Piano01_10sec.wav');
+t2 = linspace(0, 10, length(y2));
+figure(1);
+subplot(322);
+plot(t2, y2);
+grid on;
+xlabel('Time[sec]');
+ylabel('Input audio, x(t)');
+legend('Audio Piano01 10sec');
+
+[f2, X2] = myfun_SA(t2, y2);
+figure(2);
+subplot(322);
+plot(f2, abs(X2));
+grid on;
+xlim([0, 5000]);
+xlabel('Frequency[Hz]');
+ylabel('|X(f)|');
+legend('Audio Piano01 10sec');
+% sound(y2, fs2); 
+
+[y3, fs3] = audioread('Audio_Pop01_15sec.wav');
+t3 = linspace(0, 15, length(y3));
+figure(1);
+subplot(323);
+plot(t3, y3);
+grid on;
+xlabel('Time[sec]');
+ylabel('Input audio, x(t)');
+legend('Audio Pop01 15sec');
+
+[f3, X3] = myfun_SA(t3, y3);
+figure(2);
+subplot(323);
+plot(f3, abs(X3));
+grid on;
+xlim([0, 5000]);
+xlabel('Frequency[Hz]');
+ylabel('|X(f)|');
+legend('Audio Pop01 15sec');
+%sound(y3, fs3);
+
+[y4, fs4] = audioread('Audio_Song_Female01_10sec.wav');
+t4 = linspace(0, 10, length(y4));
+figure(1);
+subplot(324);
+plot(t4, y4);
+grid on;
+xlabel('Time[sec]');
+ylabel('Input audio, x(t)');
+legend('Audio Song Female01 10sec');
+
+[f4, X4] = myfun_SA(t4, y4);
+figure(2);
+subplot(324);
+plot(f4, abs(X4));
+grid on;
+xlim([0, 5000]);
+xlabel('Frequency[Hz]');
+ylabel('|X(f)|');
+legend('Audio Song Female01 10sec');
+%sound(y4, fs4);
+
+[y5, fs5] = audioread('Audio_Voice_Female01_8sec.wav');
+t5 = linspace(0, 8, length(y5));
+figure(1);
+subplot(325);
+plot(t5, y5);
+grid on;
+xlabel('Time[sec]');
+ylabel('Input audio, x(t)');
+legend('Audio Voice Female01 8sec');
+
+[f5, X5] = myfun_SA(t5, y5);
+figure(2);
+subplot(325);
+plot(f5, abs(X5));
+grid on;
+xlim([0, 5000]);
+xlabel('Frequency[Hz]');
+ylabel('|X(f)|');
+legend('Audio Voice Female01 8sec');
+%sound(y5, fs5);
+
+[y6, fs6] = audioread('Audio_Voice_Male01_11sec.wav');
+t6 = linspace(0, 11, length(y6));
+figure(1);
+subplot(326);
+plot(t6, y6);
+grid on;
+xlabel('Time[sec]');
+ylabel('Input audio, x(t)');
+legend('Audio Voice Male01 11sec');
+
+[f6, X6] = myfun_SA(t6, y6);
+figure(2);
+subplot(326);
+plot(f6, abs(X6));
+grid on;
+xlim([0, 5000]);
+xlabel('Frequency[Hz]');
+ylabel('|X(f)|');
+legend('Audio Voice Male01 11sec');
+%sound(y6, fs6);
