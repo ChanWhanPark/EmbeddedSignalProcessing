@@ -44,7 +44,7 @@ for i = 1:1:h-1 %2단계부터 h단계까지 진행
         % 회전인자의 크기가 N만큼 분할되어 있어서
         % s에 p를 더해 원하는 회전인자값을 만들어주고자 함
     end
-    key = length(W2) * 2;
+    key = length(W2) * 2
     for k = 1:1:N/key
         re = k * key - key;
         for l = 1:1:key

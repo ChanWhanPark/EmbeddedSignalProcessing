@@ -28,7 +28,7 @@ len = length(n1); % n1의 길이를 나태난다.
 index = 1; % 행렬값 저장을 위한 인덱스
 for i = 1:1:length(n) % 컨볼루션의 전체 길이만큼 연산 실행
     for j = z:1:len % z부터 len까지 연산 수행
-        h2(i, index) = h(j) % h(j)에 저장된 값을 임시로 만든 h2의 i행 index열에 추가한다.
+        h2(i, index) = h(j); % h(j)에 저장된 값을 임시로 만든 h2의 i행 index열에 추가한다.
         index = index + 1; % 인덱스 값을 1을 늘려 다음 열에 값을 추가하게 한다.
     end
     t = [x1;fliplr(h2(i,:))]; % 1열의 x1 밑에 h2의 i열을 삽입한다.

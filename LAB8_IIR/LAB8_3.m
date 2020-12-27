@@ -24,7 +24,7 @@ y = filter(num2, den2, x);
 t = n / fs;
 [fx, Xx] = myfun_SA(t, x);
 [fy, Xy] = myfun_SA(t, y);
-w = linspace(0, 600*2*pi, 600*2*pi +1);
+
 figure(5)
 subplot(321);
 plot(t, x);
@@ -39,6 +39,8 @@ grid on;
 xlim([0, 600]);
 xlabel('Frequency, f[Hz]');
 ylabel('|X(f)|');
+
+w = linspace(0, 600*2*pi, 600*2*pi+1);
 
 subplot(324)
 h = freqz(num2, den2, w/fs);

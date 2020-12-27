@@ -1,4 +1,4 @@
-N = 64;
+N = 8;
 f0 = 0.1;
 n = linspace(0, N-1, N);
 
@@ -9,7 +9,7 @@ x = cos(2*pi*f0*n);
 figure(1);
 subplot(211);
 stem(n, x, 'ro');
-xlim([0, 64]);
+xlim([0, 8]);
 subplot(212);
 stem(f_hat, abs(Xk));
 

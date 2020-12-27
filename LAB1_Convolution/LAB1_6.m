@@ -20,8 +20,8 @@ for i = 1:1:length(x) % x1만큼의 길이에서 연산
     end
 end
 
-[n, x1] = convolution(n1, x, n2, h);
-[nn, x2] = convolution(n1, xx, n2, h);
+[n, x1] = convolution(n1, x, n2, h)
+[nn, x2] = convolution(n1, xx, n2, h)
 
 %% 출력
 figure(1)
